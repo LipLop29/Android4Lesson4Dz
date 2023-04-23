@@ -13,7 +13,6 @@ private const val ANIME_PAGING_STARTING_PAGE_INDEX = ""
 class VideosPopularPagingSources(private val popularVideosApiService: PopularVideosApiService) :
     PagingSource<String,VideosModel>() {
 
-
     override fun getRefreshKey(state: PagingState<String, VideosModel>): String? {
         var current: String? = ""
 

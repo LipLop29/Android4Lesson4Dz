@@ -17,7 +17,7 @@ class PopularVideosAdapter :
 
         fun onBind(item: VideosModel?) = with(binding){
             temVideoTitleTv.text = item?.snippet?.title
-            itemVideoImg.setImage(item?.snippet!!.thumbnails.maxRes.url)
+            itemVideoImg.setImage(item?.snippet!!.thumbnails.res.url)
             itemViews.text = item.statistics.viewCount
             itemReleased.text = item.snippet.publishedAt
         }
